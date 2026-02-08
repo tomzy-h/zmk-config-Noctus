@@ -137,7 +137,7 @@
         };        
     };
 
-    macros {
+    // macros {
     //     to_layer_0: to_layer_0 {
     //         compatible = "zmk,behavior-macro-one-param";
     //         #binding-cells = <1>;
