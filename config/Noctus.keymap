@@ -305,9 +305,9 @@
 
         layer_3 {
             bindings = <
-&none  &none  &none  &none  &none     &none  &none  &kp UP  &none  &bootloader
-&mo 4  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL      &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none
-&none  &none  &none  &none  &none     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&none  &none  &none  &none  &none                   &none  &none  &none  &none  &none
+&mo 4  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL      &kp HOME  &kp LEFT  &kp UP  &kp RIGHT  &kp END
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none  &none     &none  &none  &kp DOWN  &none  &none
 &trans  &trans  &trans  &kp DELETE  &trans        &trans  &trans  &trans  &trans  &trans
             >;
         };
