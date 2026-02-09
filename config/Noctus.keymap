@@ -45,14 +45,14 @@
         // };
 
         Eisu {
-            bindings = <&kp LANGUAGE_2>;
+            bindings = <&kp INT_MUHENKAN>;
             key-positions = <21 22>;
             layers = <0>;
             timeout-ms = <30>;
         };
 
         Kana {
-            bindings = <&kp LANGUAGE_1>;
+            bindings = <&kp INT_KATAKANAHIRAGANA>;
             key-positions = <27 28>;
             layers = <0>;
             timeout-ms = <30>;
