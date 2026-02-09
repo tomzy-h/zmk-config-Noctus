@@ -296,8 +296,8 @@
 
         layer_2 {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&kp NUMBER_1  &hmr_num_l LEFT_GUI NUMBER_2  &hmr_num_l LEFT_ALT NUMBER_3  &hmr_num_l LEFT_SHIFT NUMBER_4  &hmr_num_l LCTRL NUMBER_5  &hmr_num_r RCTRL NUMBER_6  &hmr_num_r RIGHT_SHIFT NUMBER_7  &hmr_num_r RIGHT_ALT NUMBER_8  &hmr_num_r RIGHT_GUI NUMBER_9  &kp NUMBER_0
+&kp F1  &kp F4  &kp F3  &kp F2  &kp F5        &kp F6  &kp F10  &kp F7  &kp F8  &kp F9
+&kp NUMBER_1  &kp NUMBER_2  &hmr_num_l LEFT_ALT NUMBER_3  &hmr_num_l LEFT_SHIFT NUMBER_4  &hmr_num_l LCTRL NUMBER_5  &hmr_num_r RCTRL NUMBER_6  &hmr_num_r RIGHT_SHIFT NUMBER_7  &hmr_num_r RIGHT_ALT NUMBER_8  &hmr_num_r RIGHT_GUI NUMBER_9  &kp NUMBER_0
 &kp SLASH  &kp LS(SINGLE_QUOTE)  &kp MINUS  &kp LS(SEMICOLON)  &none  &kp F11  &kp F12  &kp COMMA  &kp DOT  &none
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp JP_U_SCORE
             >;
@@ -305,8 +305,8 @@
 
         layer_3 {
             bindings = <
-&none  &none  &none  &none  &none                   &none  &none  &none  &none  &none
-&mo 4  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL      &kp HOME  &kp LEFT  &kp UP  &kp RIGHT  &kp END
+&none  &none  &none  &none  &none                   &none  &none  &none  &none  &kp END
+&mo 4  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL      &kp HOME  &kp LEFT  &kp UP  &kp RIGHT  &none
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none  &none     &none  &none  &kp DOWN  &none  &none
 &trans  &trans  &trans  &kp DELETE  &trans        &trans  &trans  &trans  &trans  &trans
             >;
