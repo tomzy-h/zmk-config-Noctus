@@ -144,7 +144,7 @@
         
         Delete {
             bindings = <&kp DEL>;
-            key-positions = <13 12>;
+            key-positions = <2 3>;
             layers = <0>;
             timeout-ms = <100>;
         };        
