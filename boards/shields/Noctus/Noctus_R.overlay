@@ -36,7 +36,7 @@
     };
 };
 
-&pointer_accel {
+pointer_accel: pointer_accel {
     input-type = <INPUT_EV_REL>;  // For relative input devices
     track-remainders;             // Accumulate fractional movements
     min-factor = <800>;          // 0.8x at very slow speeds
