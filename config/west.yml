@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: sekigon-gonnoc
       url-base: https://github.com/sekigon-gonnoc
+    - name: oleksandrmaslov
+      url-base: https://github.com/oleksandrmaslov 
 
   projects:
     - name: zmk
@@ -19,6 +21,9 @@ manifest:
       revision: main
     - name: zmk-rgbled-widget
       remote: caksoylar
+      revision: main
+    - name: zmk-pointing-acceleration
+      remote: oleksandrmaslov
       revision: main
   self:
     path: config
