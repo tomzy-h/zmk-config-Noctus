@@ -3,7 +3,9 @@
 #include <dt-bindings/input/input-event-codes.h>
 #include <dt-bindings/zmk/bt.h>
 #include <input/processors.dtsi>
+#include <behaviors/input_gestures_accel.dtsi>
 #include <physical_layouts.dtsi>
+
 
 &uicr {
     nfct-pins-as-gpios;
@@ -13,6 +15,18 @@
     chosen {
         zmk,physical-layout = &default_layout;
     };
+
+
+// ZMK POINTING ACCELERATION  
+&pointer_accel {
+    input-type = <INPUT_EV_REL>;  // For relative input devices
+    track-remainders;             // Accumulate fractional movements
+    min-factor = <800>;          // 0.8x at very slow speeds
+    max-factor = <3000>;         // 3.0x at fast speeds
+    speed-threshold = <1200>;     // 1200 counts/sec for 1x
+    speed-max = <6000>;          // 6000 counts/sec for max accel
+    acceleration-exponent = <2>;  // Quadratic acceleration curve
+};
 
 //trackball settings  
 split_inputs {
@@ -46,7 +60,7 @@ split_inputs {
             &pointer_accel
         >;
             // &zip_xy_scaler 3 5 
-                   
+
         // scroller {
         //     layers = <3>;
         //     input-processors = <
