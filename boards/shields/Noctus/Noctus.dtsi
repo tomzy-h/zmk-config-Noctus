@@ -43,22 +43,21 @@ split_inputs {
       status = "disabled";
         input-processors = <
             &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)
-            // &zip_xy_scaler 3 5
-            &pointer_accel      // Acceleration processor
-            &zip_xy_transform
+            &pointer_accel
         >;
-        
-        scroller {
-            layers = <3>;
-            input-processors = <
-                &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)
-                &zip_y_scaler 1 25
-                &zip_x_scaler 1 35
-                &zip_scroll_scaler 1 25
-                &zip_xy_to_scroll_mapper
-            >;
-            process-next;
-        };
+            // &zip_xy_scaler 3 5 
+                   
+        // scroller {
+        //     layers = <3>;
+        //     input-processors = <
+        //         &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)
+        //         &zip_y_scaler 1 25
+        //         &zip_x_scaler 1 35
+        //         &zip_scroll_scaler 1 25
+        //         &zip_xy_to_scroll_mapper
+        //     >;
+        //     process-next;
+        // };
     };
 
     kscan0: kscan {
