@@ -19,9 +19,6 @@ manifest:
     - name: zmk-driver-paw3222
       remote: sekigon-gonnoc
       revision: main
-    - name: zmk-rgbled-widget
-      remote: caksoylar
-      revision: main
     - name: zmk-pointing-acceleration
       remote: oleksandrmaslov
       revision: main
