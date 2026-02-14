@@ -8,8 +8,8 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: sekigon-gonnoc
       url-base: https://github.com/sekigon-gonnoc
-    - name: oleksandrmaslov
-      url-base: https://github.com/oleksandrmaslov 
+    - name: tomzy-h
+      url-base: https://github.com/tomzy-h 
 
   projects:
     - name: zmk
@@ -20,7 +20,7 @@ manifest:
       remote: sekigon-gonnoc
       revision: main
     - name: zmk-pointing-acceleration
-      remote: oleksandrmaslov
+      remote: tomzy-h
       revision: main
   self:
     path: config
