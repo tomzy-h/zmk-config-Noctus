@@ -28,12 +28,12 @@
       };
     };
 
-    pointer_accel: pointer_accel {
-        compatible = "zmk,input-processor-acceleration";
-            status = "okay";
-            #input-processor-cells = <0>;
-            input-type = <INPUT_EV_REL>;
-    };
+    // pointer_accel: pointer_accel {
+    //     compatible = "zmk,input-processor-acceleration";
+    //         status = "okay";
+    //         #input-processor-cells = <0>;
+    //         input-type = <INPUT_EV_REL>;
+    // };
         // input-type = <INPUT_EV_REL>;  // For relative input devices
         // track-remainders;             // Accumulate fractional movements
         // min-factor = <800>;          // 0.8x at very slow speeds
