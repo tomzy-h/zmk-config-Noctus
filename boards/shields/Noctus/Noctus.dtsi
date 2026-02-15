@@ -42,12 +42,11 @@
         // speed-max = <6000>;          // 6000 counts/sec for max accel
         // acceleration-exponent = <2>;  // Quadratic acceleration curve
     //};
-    &pointer_accel {
-    status = "okay";
-    compatible = "zmk,input-processor-acceleration";
-    input-type = <INPUT_EV_REL>;
-    codes = <INPUT_REL_X INPUT_REL_Y>;
-
+    kkpointer_accel: pointer_accel {
+        status = "okay";
+        compatible = "zmk,input-processor-acceleration";
+        input-type = <INPUT_EV_REL>;
+        codes = <INPUT_REL_X INPUT_REL_Y>;
     };
 
     trackball_listener_L: trackball_listener_L {
