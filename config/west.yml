@@ -8,8 +8,9 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: sekigon-gonnoc
       url-base: https://github.com/sekigon-gonnoc
-    - name: tomzy-h
-      url-base: https://github.com/tomzy-h 
+    - name: nuovotaka
+      url-base: https://github.com/nuovotaka
+
 
   projects:
     - name: zmk
@@ -19,8 +20,8 @@ manifest:
     - name: zmk-driver-paw3222
       remote: sekigon-gonnoc
       revision: main
-    - name: zmk-pointing-acceleration
-      remote: tomzy-h
+    - name: zmk-pointing-acceleration-alpha
+      remote: nuovotaka
       revision: main
   self:
     path: config
