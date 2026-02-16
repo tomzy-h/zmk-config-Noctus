@@ -45,7 +45,6 @@
             &zip_x_scaler 1 25
             &zip_scroll_scaler 1 20
             &zip_xy_to_scroll_mapper
-            &pointer_accel
         >;
     };
 

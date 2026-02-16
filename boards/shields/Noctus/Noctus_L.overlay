@@ -1,7 +1,7 @@
 #include "Noctus.dtsi"
 #include <dt-bindings/zmk/input_transform.h>
-#include <behaviors/input_gestures_accel.dtsi>
-#include <zephyr/dt-bindings/input/input-event-codes.h>
+// #include <behaviors/input_gestures_accel.dtsi>
+// #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <input/processors.dtsi>
 
 
@@ -53,13 +53,9 @@
         spi-max-frequency = <2000000>;
         res-cpi = <608>;
         // Precision mode (snipe)
-        snipe-layers = <0 1>;             // Layers that activate snipe mode
-        snipe-cpi = <400>;                  // Reduced CPI for precision
-        snipe-divisor = <3>;                // Further divide movement by 3
-
         // Scroll mode
-        scroll-layers = <0 2 3>;          // Layers that activate scrolling
-        scroll-horizontal-layers = <0 3>;   // Horizontal scroll layers
+        // scroll-layers = <0 2 3>;          // Layers that activate scrolling
+        // scroll-horizontal-layers = <0 3>;   // Horizontal scroll layers
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
 };
