@@ -28,20 +28,6 @@
       };
     };
 
-    // pointer_accel: pointer_accel {
-    //     compatible = "zmk,input-processor-acceleration";
-    //         status = "okay";
-    //         #input-processor-cells = <0>;
-    //         input-type = <INPUT_EV_REL>;
-    // };
-        // input-type = <INPUT_EV_REL>;  // For relative input devices
-        // track-remainders;             // Accumulate fractional movements
-        // min-factor = <800>;          // 0.8x at very slow speeds
-        // max-factor = <3000>;         // 3.0x at fast speeds
-        // speed-threshold = <1200>;     // 1200 counts/sec for 1x
-        // speed-max = <6000>;          // 6000 counts/sec for max accel
-        // acceleration-exponent = <2>;  // Quadratic acceleration curve
-    //};
     kkpointer_accel: pointer_accel {
         status = "okay";
         compatible = "zmk,input-processor-acceleration";
@@ -59,6 +45,7 @@
             &zip_x_scaler 1 25
             &zip_scroll_scaler 1 20
             &zip_xy_to_scroll_mapper
+            &pointer_accel
         >;
     };
 
