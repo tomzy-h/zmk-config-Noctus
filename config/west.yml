@@ -17,7 +17,7 @@ manifest:
       remote: nuovotaka
       revision: main
     - name: zmk-driver-paw3222
-      remote: sekigon-gonnoc  # 元の sekigon-gonnoc 版を使用
+      remote: sekigon-gonnoc
       revision: main
     # - name: zmk-driver-paw3222-alpha
     #   remote: nuovotaka
