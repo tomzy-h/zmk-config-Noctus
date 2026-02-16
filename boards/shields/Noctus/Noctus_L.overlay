@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include <input/processors.dtsi>
 
+
 &kscan0 {
         col-gpios
             = <&xiao_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
@@ -48,7 +49,15 @@
         compatible = "pixart,paw3222";
         reg = <0>;
         spi-max-frequency = <2000000>;
-        res-cpi = <608>;        
+        res-cpi = <608>;
+        // Precision mode (snipe)
+        snipe-layers = <0 1>;             // Layers that activate snipe mode
+        snipe-cpi = <400>;                  // Reduced CPI for precision
+        snipe-divisor = <3>;                // Further divide movement by 3
+
+        // Scroll mode
+        scroll-layers = <0 2 3>;          // Layers that activate scrolling
+        scroll-horizontal-layers = <0 3>;   // Horizontal scroll layers
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
 };
