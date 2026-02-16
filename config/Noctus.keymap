@@ -52,7 +52,7 @@
         };
 
         Kana {
-            bindings = <&kp INT_KATAKANAHIRAGANA>;
+            bindings = <&kp INTERNATIONAL_4>;
             key-positions = <27 28>;
             layers = <0>;
             timeout-ms = <100>;
