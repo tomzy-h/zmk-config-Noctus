@@ -4,8 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: MeowCatpawkittie
       url-base: https://github.com/MeowCatpawkittie
-    - name: caksoylar
-      url-base: https://github.com/caksoylar
+    - name: tomzy-h
+      url-base: https://github.com/tomzy-h
     - name: sekigon-gonnoc
       url-base: https://github.com/sekigon-gonnoc
 
@@ -18,7 +18,7 @@ manifest:
       remote: sekigon-gonnoc
       revision: main
     - name: zmk-rgbled-widget
-      remote: caksoylar
-      revision: v0.3-branch
+      remote: tomzy-h
+      revision: oldbranch
   self:
     path: config
