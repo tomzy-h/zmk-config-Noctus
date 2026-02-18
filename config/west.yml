@@ -19,6 +19,6 @@ manifest:
       revision: main
     - name: zmk-rgbled-widget
       remote: tomzy-h
-      revision: oldbranch
+      revision: oldBranch
   self:
     path: config
