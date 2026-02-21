@@ -18,14 +18,14 @@
 
 
     //trackball settings  
-    split_inputs {
-      #address-cells = <1>;
-      #size-cells = <0>;
-      trackball_split_L: trackball_split_L@0 {
-        compatible = "zmk,input-split";
-        reg = <0>;
-      };
-    };
+    // split_inputs {
+    //   #address-cells = <1>;
+    //   #size-cells = <0>;
+    //   trackball_split_L: trackball_split_L@0 {
+    //     compatible = "zmk,input-split";
+    //     reg = <0>;
+    //   };
+    // };
 
     kkpointer_accel: pointer_accel {
         status = "okay";
@@ -37,7 +37,6 @@
     trackball_listener_L: trackball_listener_L {
       compatible = "zmk,input-listener";
       status = "disabled";
-      device = <&trackball_split_L>;
         input-processors = <
             &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
             &zip_y_scaler 1 20
