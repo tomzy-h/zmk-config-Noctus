@@ -34,15 +34,9 @@
     };
 };
 
-// &trackball_split_L {
-//     device = <&trackball_L>;
-// };
-
-&trackball_listener_L {
-    status="okay";
+&trackball_split_L {
     device = <&trackball_L>;
 };
-
 
 &spi0 {
     status = "okay";
