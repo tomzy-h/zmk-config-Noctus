@@ -41,7 +41,7 @@
 &trackball_listener_L {
     status="okay";
     device = <&trackball_L>;
-}
+};
 
 
 &spi0 {
