@@ -21,7 +21,6 @@
     split_inputs {
       #address-cells = <1>;
       #size-cells = <0>;
-
       trackball_split_L: trackball_split_L@0 {
         compatible = "zmk,input-split";
         reg = <0>;
@@ -72,7 +71,6 @@
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
-        label = "KSCAN";
         diode-direction = "col2row";
         wakeup-source;
 
