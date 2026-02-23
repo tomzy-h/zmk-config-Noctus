@@ -75,6 +75,21 @@
         };
     };
 
+    &zip_temp_layer {
+    excluded-positions = <
+    5   // MB4
+    6   // MB5
+    16  // j
+    17  // k
+    18  // l
+    12  // alt_L
+    13  // shift_L
+    14  // ctrl_L
+    15  // shift_R
+    >;
+    require-prior-idle-ms = <200>;
+};
+
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
