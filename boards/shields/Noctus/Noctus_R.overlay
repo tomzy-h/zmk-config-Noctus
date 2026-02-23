@@ -69,3 +69,7 @@
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
 };
+
+&zip_temp_layer {
+    excluded-positions = <37>;
+};
