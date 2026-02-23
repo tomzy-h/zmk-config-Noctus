@@ -70,3 +70,19 @@
     };
 };
 
+&zip_temp_layer {
+    excluded-positions = <
+    5   // MB4
+    6   // MB5
+    16  // j
+    17  // k
+    18  // l
+    12  // alt_L
+    13  // shift_L
+    14  // ctrl_L
+    15  // shift_R
+    26  // K_COPY
+    27  // K_PASTE
+    >;
+    require-prior-idle-ms = <200>;
+};
