@@ -35,7 +35,7 @@
     };
 
     trackball_listener_L: trackball_listener_L {
-      compatible = "zmk,input-listener";
+      compatible = "zmk,input-listener";k
       status = "disabled";
       device = <&trackball_split_L>;
         input-processors = <
@@ -54,7 +54,6 @@
             &pointer_accel
             &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)
             &zip_xy_scaler 3 5
-            &zip_temp_layer 6 5000
         >;
             // &zip_xy_scaler 1 2 // 0.500
             // &zip_xy_scaler 3 5 // 0.600
