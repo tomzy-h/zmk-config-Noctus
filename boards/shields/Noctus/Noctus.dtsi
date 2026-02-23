@@ -53,11 +53,7 @@
         input-processors = <
             &pointer_accel
             &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)
-<<<<<<< HEAD
-            &zip_xy_scaler 3 5k
-=======
             &zip_xy_scaler 3 5
->>>>>>> 64929d70eea3d80c5e155e815e8f4d26693a8f73
         >;
             // &zip_xy_scaler 1 2 // 0.500
             // &zip_xy_scaler 3 5 // 0.600
