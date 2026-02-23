@@ -54,7 +54,7 @@
             &pointer_accel
             &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)
             &zip_xy_scaler 3 5
-            &zip_temp_layer 6 5000
+            &zip_temp_layer 6 1200
         >;
             // &zip_xy_scaler 1 2 // 0.500
             // &zip_xy_scaler 3 5 // 0.600
