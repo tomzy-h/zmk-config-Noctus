@@ -38,7 +38,8 @@
                 #binding-cells = <0>;
                 bindings
                     = <&macro_press &kp LCTRL>
-                    , <&macro_tap &kp C>;
+                    , <&macro_tap &kp C>
+                    , <&macro_release &kp LCTRL>;
         };
 
         pst:pst {
@@ -46,7 +47,25 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp V>;
+                , <&macro_tap &kp V>
+                , <&macro_release &kp LCTRL>;
+        };
+
+        scshot:scshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LEFT_SHIFT &kp LEFT_GUI>
+                , <&macro_tap &kp S>
+                , <&macro_release &kp LEFT_SHIFT &kp LEFT_GUI>;
+        };
+
+        ctraltdel:ctraltdel {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LEFT_CONTROL &kp LEFT_ALT &kp DEL>
+                , <&macro_release &kp LEFT_CONTROL &kp LEFT_ALT &kp DEL>;
         };
     };
 };
@@ -345,7 +364,7 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &kp K_BACK &kp K_FORWARD   &trans    &trans    &trans
+&trans  &trans  &scshot  &trans  &trans    &kp K_BACK &kp K_FORWARD   &ctraltdel    &trans    &trans
 &trans  &trans  &trans  &trans  &kp LEFT_CONTROL    &kp RIGHT_SHIFT  &mkp MB1  &mkp MB3  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &cpy    &pst    &trans    &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans    &trans
