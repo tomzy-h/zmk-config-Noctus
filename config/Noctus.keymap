@@ -7,29 +7,48 @@
 
 // OS設定を日本語キーボードのまま使用するための変換定義
 
-#define JP_DQUOTE       AT                // "
-#define JP_AMPERSAND    CARET             // &
-#define JP_QUOTE        AMPERSAND         // '
-#define JP_EQUAL        UNDER             // =
-#define JP_CARET        EQUAL             // ^
-#define JP_YEN          0x89              // ¥
-#define JP_PLUS         COLON             // +
-#define JP_TILDE        PLUS              // ~
-#define JP_PIPE         LS(0x89)          // |
-#define JP_AT           LEFT_BRACKET      // @
-#define JP_COLON        SINGLE_QUOTE      // :
-#define JP_ASTERISK     DOUBLE_QUOTES     // *
-#define JP_BACKQUOTE    LEFT_BRACE        // `
-#define JP_U_SCORE      LS(0x87)          // _
-#define JP_LBRACKET     RIGHT_BRACKET     // [
-#define JP_RBRACKET     BACKSLASH         // ]
-#define JP_LPAREN       ASTERISK          // (
-#define JP_RPAREN       LEFT_PARENTHESIS  // )
-#define JP_LBRACE       RIGHT_BRACE       // {
-#define JP_RBRACE       PIPE              // }
-#define JP_KANA         LANGUAGE_1        // かな
-#define JP_EISU         LANGUAGE_2        // 英数
-#define JP_HANZEN       GRAVE             // 半角/全角
+// #define JP_DQUOTE       AT                // "
+// #define JP_AMPERSAND    CARET             // &
+// #define JP_QUOTE        AMPERSAND         // '
+// #define JP_EQUAL        UNDER             // =
+// #define JP_CARET        EQUAL             // ^
+// #define JP_YEN          0x89              // ¥
+// #define JP_PLUS         COLON             // +
+// #define JP_TILDE        PLUS              // ~
+// #define JP_PIPE         LS(0x89)          // |
+// #define JP_AT           LEFT_BRACKET      // @
+// #define JP_COLON        SINGLE_QUOTE      // :
+// #define JP_ASTERISK     DOUBLE_QUOTES     // *
+// #define JP_BACKQUOTE    LEFT_BRACE        // `
+// #define JP_U_SCORE      LS(0x87)          // _
+// #define JP_LBRACKET     RIGHT_BRACKET     // [
+// #define JP_RBRACKET     BACKSLASH         // ]
+// #define JP_LPAREN       ASTERISK          // (
+// #define JP_RPAREN       LEFT_PARENTHESIS  // )
+// #define JP_LBRACE       RIGHT_BRACE       // {
+// #define JP_RBRACE       PIPE              // }
+// #define JP_KANA         LANGUAGE_1        // かな
+// #define JP_EISU         LANGUAGE_2        // 英数
+// #define JP_HANZEN       GRAVE             // 半角/全角
+
+/{
+    macros {
+        cpy:cpy {
+            compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LCTRL>
+                    , <&macro_tap &kp C>;
+        };
+
+        pst:pst {
+            compatible = "zmk,behavior-macro";
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp V>;
+        };
+    };
+};
 
 &mt {
     flavor = "balanced";
@@ -38,7 +57,7 @@
 
 // for extend timer when mouse button
 &mkp_input_listener {
-    input-processors = <&zip_temp_layer 6 1200>;
+    input-processors = <&zip_temp_layer 6 1000>;
 };
 
 / {
@@ -327,7 +346,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &kp K_BACK &kp K_FORWARD   &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &kp LEFT_CONTROL    &kp RIGHT_SHIFT  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &kp K_COPY    &kp K_PASTE    &trans    &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &cpy    &pst    &trans    &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans    &trans
             >;
         };

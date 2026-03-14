@@ -84,5 +84,5 @@
     26  // K_COPY
     27  // K_PASTE
     >;
-    require-prior-idle-ms = <200>;
+    require-prior-idle-ms = <900>;
 };
