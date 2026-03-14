@@ -72,8 +72,10 @@
 
 &zip_temp_layer {
     excluded-positions = <
+    2   // macro scshot
     5   // MB4
     6   // MB5
+    7   // macro ctraltdel
     16  // j
     17  // k
     18  // l
